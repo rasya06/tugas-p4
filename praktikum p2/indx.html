@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pemesanan Barang</title>
+  <style>
+    body { background: #e6e6e6; font-family: Arial, sans-serif; font-size: 11px; margin: 0; padding: 15px; }
+    .halaman { width: 700px; margin: 0 auto; }
+    .nav { border: 1px solid #000; background: #fff; text-align: center; padding: 3px 0; margin-bottom: 25px; }
+    .nav a { color: #000; text-decoration: none; margin: 0 25px; }
+    table.utama td { vertical-align: top; padding: 4px; }
+    td.label { text-align: right; white-space: nowrap; }
+    input[type=text], input[type=email], textarea, select { border: 1px solid #000; background: #fff; font-size: 11px; padding: 2px; }
+    .gambar { border: 1px solid #000; background: #fff; width: 200px; height: 160px; display: block; }
+    .upload { border: 1px solid #000; background: #fff; padding: 2px 10px; margin-top: 8px; font-size: 10px; }
+    .catatan { font-size: 9px; }
+    .tombol { background: #1a9a1a; color: #fff; border: 1px solid #0a6a0a; font-size: 10px; font-weight: bold; padding: 3px 18px; }
+    .hijau { color: #2a8a2a; }
+    .tengah { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="halaman">
+
+    <!-- Navigasi -->
+    <div class="nav">
+      <a href="#">Home</a>|
+      <a href="#">Generate Link</a>|
+      <a href="#">Transaction History</a>|
+      <a href="#">Policy</a>|
+      <a href="#">Logout</a>
+    </div>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <table class="utama" cellspacing="0">
+        <tr>
+          <!-- Kiri: gambar + tombol upload -->
+          <td rowspan="8" style="width:210px;">
+            <img class="gambar" src="/7cc774a3a20509761dbbb0fc3cb1da12.jpg" alt="Gambar HP yang dijual">
+            <input type="file" name="gambar" accept="image/*" class="upload">
+          </td>
+
+          <td class="label"><label for="title">Title Here :</label></td>
+          <td><input type="text" id="title" name="title" value="Smartphone Android Rp 3.000.000" size="45"></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="deskripsi">Description :</label></td>
+          <td><textarea id="deskripsi" name="deskripsi" rows="6" cols="48">Year : 2024
+
+Model : Android 128GB
+
+Condition : Mint</textarea></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="no_rek">Account Number :</label></td>
+          <td><input type="text" id="no_rek" name="no_rek" value="123-456-789-0" size="45"></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="bank">Bank :</label></td>
+          <td>
+            <select id="bank" name="bank" style="width:270px;">
+              <option value="hsbc" selected>HSBC</option>
+              <option value="bca">BCA</option>
+              <option value="bni">BNI</option>
+              <option value="mandiri">Mandiri</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label"><label for="pemilik">Account Holder :</label></td>
+          <td><input type="text" id="pemilik" name="pemilik" placeholder="syakuy" size="40"></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="transaksi">Transaction :</label></td>
+          <td>
+            <select id="transaksi" name="transaksi">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div class="catatan">* If the transaction is for 3 person, choose 3 from the drop-down list</div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="hijau">
+            <input type="checkbox" id="kirim_hp" name="kirim_hp" checked>
+            <label for="kirim_hp">Send to Mobile Phone</label><br>
+            <input type="checkbox" id="kirim_email" name="kirim_email" checked>
+            <label for="kirim_email">Send to Email</label>
+          </td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table class="utama" cellspacing="0" style="margin-left:60px;">
+        <tr>
+          <td class="label"><label for="hp">Send to Mobile Phone :</label></td>
+          <td><input type="text" id="hp" name="hp" value="08963637373" size="48"></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="email">Send to Email :</label></td>
+          <td><input type="email" id="email" name="email" multiple value="rasyanurramadhan@gma.com" size="48"></td>
+        </tr>
+      </table>
+
+      <br>
+      <div class="tengah">
+        <input type="submit" class="tombol" value="Generate QuidLink">
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
+</body>
+
+</html>

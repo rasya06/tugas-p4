@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #eee; margin: 0; padding: 16px; color: #222; }
+.halaman { max-width: 960px; margin: auto; background: #fff; border: 2px solid #333; padding: 16px; }
+
+header { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.foto-diri { width: 180px; height: 220px; object-fit: cover; border: 2px solid #333; }
+.identitas { flex: 1; min-width: 240px; }
+.identitas h1 { margin: 0 0 8px; }
+.identitas td { padding: 2px 12px 2px 0; font-size: 14px; vertical-align: top; }
+.identitas td:first-child { font-weight: bold; white-space: nowrap; }
+
+nav { text-align: right; }
+nav h3 { margin: 0 0 6px; text-decoration: underline; font-size: 14px; }
+nav a { display: block; font-size: 14px; color: #00c; }
+
+main { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+article { flex: 2; min-width: 280px; }
+article p { line-height: 1.6; text-align: justify; }
+aside { flex: 1; min-width: 240px; }
+aside section { border: 1px solid #333; padding: 10px; margin-bottom: 12px; }
+aside h3 { margin: 0 0 8px; font-size: 15px; }
+video { width: 100%; }
+.grid-foto { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.grid-foto img { width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid #333; }
+.lampiran ul { margin: 0; padding-left: 18px; }
+.lampiran a { color: #00c; }
+
+.halaman > footer { border-top: 1px solid #333; margin-top: 8px; padding-top: 10px; text-align: center; font-size: 13px; }
