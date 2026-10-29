@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpukat Buah Nikmat Kaya Manfaat</title>
+<style>
+/* a. Background dan font halaman */
+body {
+    background-color: lightblue;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+/* b. Selector heading 1 dan paragraph */
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+p {
+    text-align: justify;
+    width: fit-content;
+}
+
+/* c. Gambar di tengah */
+.center {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* d. Foto background hitam, gambar 23% */
+.foto {
+    background-color: black;
+}
+.foto img {
+    width: 23%;
+}
+
+/* e. Class cod */
+.cod {
+    margin: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cod p {
+    background-color: aqua;
+    border: 1px dotted red;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+    width: auto;
+}
+
+/* f. Desain promo */
+.promo { text-align: center; }
+.promo h2 { color: red; }
+.promo .coret { text-decoration: line-through; color: red; }
+.promo .harga { font-size: 1.4em; font-weight: bold; color: red; }
+.promo p { text-align: center; width: auto; font-weight: bold; }
+.btn {
+    background-color: gold;
+    border: 1px solid orange;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+/* Modifikasi text: highlight teks tebal */
+b, strong {
+    background-color: yellow;
+    color: #333;
+    padding: 0 2px;
+}
+.italic-bold { font-style: italic; }
+
+/* Table: setiap baris beda warna */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 90%;
+}
+th {
+    background-color: #5b9bd5;
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+td { padding: 8px; }
+tr:nth-child(odd) td  { background-color: #deeaf6; }
+tr:nth-child(even) td { background-color: #bdd7ee; }
+</style>
+</head>
+<body>
+
+<h1>Alpukat Buah Nikmat Kaya Manfaat</h1>
+
+<img src="/tugas p4/alpukat.jpg" alt="Alpukat 1" class="center">
+
+<p>Alpukat merupakan jenis buah yang memiliki kandungan lemak tinggi, sekitar
+<strong>20 kali</strong> lebih tinggi dibanding buah-buahan lain. Nama latin tanaman
+alpukat adalah <em>Persea americana</em>, diyakini berasal dari Amerika Tengah.
+Buah ini dikenalkan ke Indonesia oleh Hindia Belanda sekitar tahun
+<strong>1920-1930</strong>. Belanda saat itu membawa alpukat ke Indonesia untuk
+memenuhi kebutuhan lemak masyarakat yang tinggal di pegunungan.</p>
+
+<img src="/tugas p4/alpukat2.jpg" alt="Alpukat 2" class="center">
+
+<!-- Promo -->
+<div class="foto">
+    <img src="/tugas p4/alpukat3.png" alt="">
+    <img src="/tugas p4/alpukat_aligator.png" alt="">
+    <img src="/tugas p4/alpukat_kendil.png" alt="">
+    <img src="/tugas p4/alpukat_mentega.png" alt="">
+</div>
+
+<div class="promo">
+    <h2>Anda ingin Buah Alpukat?,<br>Penawaran Khusus Bagi Anda</h2>
+    <p>Harga 1 Kg <span class="coret">Rp. 35.000</span></p>
+    <p>Nah sekarang <span class="harga">Rp. 25.000</span> saja<br>Gimana? Tertarik !</p>
+
+    <div class="cod">
+        <p>PEMBAYARAN DI TEMPAT / COD<br>
+        hanya untuk Jakarta, Bekasi dan Depok<br>
+        POTONGAN ONGKIR Rp.5.000,-<br>
+        UNTUK PEMBELIAN VIA TRANSFER</p>
+    </div>
+    <br>
+    <button class="btn">PESAN SEKARANG</button>
+</div>
+
+<!-- Khasiat -->
+<h3>Berikut khasiat buah Alpukat:</h3>
+<ol>
+    <li><strong>Vitamin E</strong>, Memiliki <i>anti aging</i> yang bisa mendorong perawatan kulit alami</li>
+    <li><strong>Vitamin K</strong>, Membantu mencegah terjadinya <i>osteoporosis</i></li>
+    <li><strong>Vitamin B5</strong>, Membantu menurunkan tingkat stress, meringankan rasa sakit</li>
+    <li><strong>Vitamin B6</strong>, Membantu <i>treat diabetes</i>, pendarahan menstruasi, insomnia</li>
+</ol>
+
+<!-- Tabel harga -->
+<table>
+    <tr><th>No</th><th>Jenis Alpukat</th><th>Harga 1 Kg</th><th>Harga 2Kg</th><th>Harga 3Kg</th></tr>
+    <tr><td>1</td><td>Alpukat Mentega</td><td>Rp. 35.000, -</td><td>Rp. 65.000, -</td><td>Rp. 90.000, -</td></tr>
+    <tr><td>2</td><td>Alpukat Miki</td><td>Rp. 50.000, -</td><td>Rp. 90.000, -</td><td>Rp. 135.000, -</td></tr>
+    <tr><td>3</td><td>Alpukat Aligator</td><td>Rp. 30.000, -</td><td>Rp. 55.000, -</td><td>Rp. 80.000, -</td></tr>
+    <tr><td>4</td><td>Alpukat Kendil</td><td>Rp. 40.000, -</td><td>Rp. 75.000, -</td><td>Rp. 100.000, -</td></tr>
+</table>
+
+</body>
+</html>

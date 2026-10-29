@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 8px;
+  background-color: #f5f5dc;
+  font-family: Verdana, 'Lucida Sans', sans-serif;
+  font-size: 12px;
+}
+
+header {
+  background-color: burlywood;
+  padding: 10px 15px 15px;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+}
+
+blockquote {
+  background-color: gold;
+  border: 1px dotted black;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+  font-size: 11px;
+}
+
+nav { text-align: center; margin: 12px 0; }
+nav a { color: darkslateblue; font-size: 11px; }
+
+.gambar { text-align: center; }
+.gambar img {
+  width: 120px;
+  height: 125px;
+  object-fit: cover;
+  vertical-align: top;
+}
+.gambar img + img { border-radius: 6px; }
+
+p { text-align: justify; }
+
+p.awal::first-letter {
+  float: left;
+  font-size: 36px;
+  line-height: 1;
+  color: blue;
+  margin-right: 2px;
+}
+
+h4 { margin: 8px 0; }
